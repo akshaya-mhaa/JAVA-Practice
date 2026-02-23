@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class palindrome
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args)
+	{
+		System.out.println("enter a number:");
+		int num=sc.nextInt();
+		int p=0;
+		
+		while(num!=0)
+		{
+			int l=num%10;
+			System.out.println(l);
+			num=num/10;
+			
+			
+			p=p+l;
+			
+			p=p*10;
+			
+		}
+		System.out.println(p);
+		if(p==num*10)
+		{
+			System.out.println(num+"is a palindrome");
+		}
+		else
+		{
+			System.out.println(num+"is not a aplindrome");
+		}
+		
+	}
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class revpal 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a number:");
+		int num=sc.nextInt();
+		System.out.println(reverse(num));
+		if(ispali(num))
+			System.out.println("is palindrome");
+		else
+			System.out.println("is not a palindrome");
+	}
+	public static int reverse(int num)
+	{
+		int rev=0;
+		while(num!=0)
+		{
+			int l=num%10;
+			rev=rev*10+l;
+			num=num/10;
+		}
+		return rev;
+	}
+	public static boolean ispali(int num)
+	{
+		if(num==reverse(num))
+			return true;
+		else 
+			return false;
+		
+	}
+}

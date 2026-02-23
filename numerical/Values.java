@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Values 
+{
+	static Scanner sc= new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter a number:");
+		int nn=sc.nextInt();
+		System.out.println("Decimal value is :"+nn);
+		String oct="";
+		int n=nn;
+		while(n!=0){
+			oct=(n%8)+oct;
+			n/=8;			
+		}
+		System.out.println("Octal value is :"+oct);
+		int s=nn;
+		String hex="";
+		while(s!=0){
+			int a=s%16;
+			if(a<10) 
+				hex=a+hex;
+			else
+				hex=((char)(a+55))+hex;
+				
+				s/=16;
+		}
+		
+		System.out.println("Hexa-decimal value is:"+hex);
+		
+	}
+}

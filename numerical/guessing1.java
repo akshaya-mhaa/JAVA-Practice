@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class guessing1 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int guess=(Math.random()*100);
+		System.out.println(guess);
+		int count=0;
+		boolean next=true;
+		do{
+			System.out.println("Guess the number:");
+			int no=sc.nextInt();
+			count++;
+			if(no==guess)
+			{
+				System.out.println("number gussed!!!");
+				System.out.println("turns taken:"+count);
+				next=false;
+			}
+			else if(no<guess){
+				System.out.println("you guessed less. try again");
+			}
+			
+			else
+				System.out.println("you guessed more. try again");
+		}while(next);
+	}
+}

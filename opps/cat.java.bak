@@ -1,0 +1,7 @@
+class cat extends Animal
+{
+	
+	public void makesouond(){
+		System.out.println("cat meows");
+	}
+}

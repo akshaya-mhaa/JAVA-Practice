@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class primeme 
+{
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) 
+    {
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int nextprime = nextPrime(num);
+        System.out.println("Next prime number is: " + nextprime);
+    }
+
+    public static int nextPrime(int num)
+    {
+        num++;
+        while(true)
+        {
+            if(isPrime(num))
+                return num;
+            num++;
+        }
+    }
+
+    public static boolean isPrime(int num)
+    {
+        if (num < 2)
+            return false;
+
+        for (int i = 2; i <num; i++) 
+        {
+            if (num % i == 0)
+                return false;
+        }
+        return true; 
+    }
+}

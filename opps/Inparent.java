@@ -1,0 +1,8 @@
+class Inparent 
+{
+	int a;
+	Inparent(int a)
+	{
+		this.a=a;
+	}
+}

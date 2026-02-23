@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Taxi 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Taxi Number");
+		String n=sc.next();
+		System.out.println("Enter distance travelled:");
+		int km=sc.nextInt();
+		int total=0;
+		if(km<=5)
+			total=100;
+		if(km>5&&km<=15)
+			total=100+(km-5)*10;
+		if(km>15&&km<=25)
+			total=200+(km-15)*8;
+		if(km>25)
+			total=280+(km-25)*5;
+		System.out.println("Taxi number: "+n);
+		System.out.println("Distance covered: "+km);
+		System.out.println("Amount: "+total);
+	}
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class fibonaccii 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a number:");
+		int n=sc.nextInt();
+		int a=-1;
+		int b=1;
+	
+		for (int i=1;i<n;i++ )
+		{
+			int c=a+b;
+			System.out.println(c+"\t");
+			a=b;
+			b=c;
+		}
+		
+	}
+}

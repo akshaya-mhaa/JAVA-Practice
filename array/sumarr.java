@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class sumarr 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter the number of elements:");
+		int n=sc.nextInt();
+		int sum=0;
+		
+		System.out.println("enter the values:");
+		int[] arr= new int[n];
+		for(int i=0;i<n;i++)
+			{
+			arr[i]=sc.nextInt();
+		}
+		
+		for(int j=n;j>=0;j--)
+			sum=sum+j;
+		System.out.println(sum+"is the sum of array elements");
+	}
+}

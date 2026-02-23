@@ -1,0 +1,40 @@
+class Solution {
+    public String longestPalindrome(String s) {
+        String larpal="";
+        
+
+        for(int i=0;i<s.length();i++)
+        {
+            String str1="";
+            char ch =s.charAt(i);
+            str1+=ch;
+        for(int j=i+1;j<s.length();)
+        {
+            char ch2=s.charAt(j);
+            str1+=ch2;
+            if(ispali(str1)&&str1.length()>2)
+            {
+                larpal=str1;
+            j++;
+            }
+            else
+                j++;
+        }
+    }
+        return larpal;
+        
+    }
+    public boolean ispali(String str)
+    {
+        String rev="";
+        for(int i=str.length()-1;i>=0;i--)
+        {
+            char ch=str.charAt(i);
+            rev+=ch;
+        }
+        if(rev.equals(str))
+            return true;
+        else 
+            return false;
+    }
+}

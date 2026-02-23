@@ -1,0 +1,10 @@
+class Gst` 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter price:");
+		int p=sc.nextInt();
+		double gst=(p*9)/100;
+		System.out.println(p+(2*gst));
+	}
+}

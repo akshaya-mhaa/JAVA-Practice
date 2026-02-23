@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class guess 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int i=75;
+		int c=0;
+		while(i<= 100)
+		{
+			System.out.println("Enter a number:");
+			int a =sc.nextInt();
+			if(a<i)
+			{
+				System.out.println("Smaller than the guessing value . Try again");
+				c++;
+			}
+			else if(a>i)
+			{
+				System.out.println("larger than the guessing value . Try again");
+				c++;
+			}
+			else
+			{
+				System.out.println("you guessed right!");
+				c++;
+				break;
+			}
+		}
+		System.out.println("Number of tries:"+c);
+				
+	}
+}

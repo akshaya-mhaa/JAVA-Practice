@@ -1,0 +1,36 @@
+import java.util.*;
+class  words
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("enter a string:");
+		String s=sc.nextLine();
+		String str=reverse(s);
+		System.out.println("reverse : "+str);
+	}
+	public static String reverse(String s)
+	{
+		char[] arr=s.toCharArray();
+		int l=0;
+			int r=s.length()-1;
+			
+			while(l<r)
+		    {
+				if(!Character.isDigit(arr[l]))
+					l++;
+				else if (!Character.isDigit(arr[r]))
+					r--;
+				else
+				{
+					char temp=arr[l];
+					arr[l]=arr[r];
+					arr[r]=temp;
+					l++;
+					r--;
+				}					
+		   }
+			String res=new String(arr);
+			return res;
+	}
+}

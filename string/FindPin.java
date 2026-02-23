@@ -1,0 +1,43 @@
+class FindPin 
+{
+	public static void main(String[] args) 
+	{
+		int n1=3521;
+		int n2=2452;
+		int n3=1352;
+		int n4=38;
+		int sum=0;
+		if(n4%2==0)
+			sum=sumeven(n1)+sumeven(n2)+sumeven(n3);
+		else
+			sum=sumodd(n1)+sumodd(n2)+sumodd(n3);
+		
+		
+		System.out.println(sum);
+	}
+	
+	public static int sumeven(int a){
+		int sum=0;
+		while(a!=0)
+		{
+			int l=a%10;
+			if(l%2==0)
+				sum+=l;
+			
+			a/=10;
+		}
+		return sum;
+	}
+	
+	public static int sumodd(int a){
+		int sum=0;
+		while(a!=0){
+			int l=a%10;
+			if(l%2!=0)
+				sum+=l;
+			
+			a/=10;
+		}
+		return sum;
+	}
+}

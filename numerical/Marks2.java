@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Marks2 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter your marks");
+		System.out.println("Enter subject 1 marks");
+		int s1=sc.nextInt();
+		System.out.println("Enter subject 2 marks");
+		int s2=sc.nextInt();
+		System.out.println("Enter subject 3 marks");
+		int s3=sc.nextInt();
+		System.out.println("Enter subject 4 marks");
+		int s4=sc.nextInt();
+		System.out.println("Enter subject 5 marks");
+		int s5=sc.nextInt();
+		if(s1>100||s1<0||s2>100||s3>100||s4>100||s5>100||s2<0||s3<0||s4<0||s5<0)
+			System.out.println("Enter valid input!");
+		else
+			System.out.println("Percentage :"+(s1+s2+s3+s4+s5)/5);
+	}
+}

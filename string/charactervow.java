@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class charactervow 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a character:");
+		char ch2=sc.next().charAt(0);
+		
+		if(ch2 >= 'a' && ch2  <= 'z')
+		{
+			if(ch2=='a' || ch2=='e' || ch2=='i' ||ch2=='o' ||ch2=='u' ||ch2=='A' || ch2=='E' || ch2=='I' ||ch2=='O' ||ch2=='U')
+			{
+				System.out.println(ch2+"is vowel");
+			}
+			else
+			{
+				System.out.println(ch2+"is consonant");
+			}
+		}
+		else
+			{
+			System.out.println("enter a vowel");
+			}
+		
+	}
+}

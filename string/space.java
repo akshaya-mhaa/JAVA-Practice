@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class space 
+{
+	static Scanner sc= new Scanner (System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a sentance:");
+		String sen=sc.nextLine();
+		int words =0;
+		for (int i=0;i<sen.length() ;i++ )
+		{
+			if(sen.charAt(i)==' ')
+				{
+				words++;}
+		
+		}
+		  if (sen.length() > 0) 
+			  {
+            words = words + 1;
+        }
+		System.out.println("Number of words in the sentence is " + words);
+	}
+}

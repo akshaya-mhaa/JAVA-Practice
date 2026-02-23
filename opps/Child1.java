@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Child1 
+{
+	static Scanner sc= new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		ParentChild p=new ParentChild();
+		
+		System.out.println("Enter your name:");
+		String n=sc.next();
+		p.setname(n);
+		System.out.println("enter your age:");
+		int a=sc.nextInt();
+		p.setage(a);
+		System.out.println("Enter your phonenumber:");
+		long g=sc.nextLong();
+		p.setphonenumber(g);
+		
+		System.out.println(p.getname());
+		System.out.println(p.getage());
+		System.out.println(p.getphonenumber());
+		
+		System.out.println("choose 1 to change name , 2 to change phone number");
+		int choice = sc.nextInt();
+		switch(choice)
+		{
+			case 1:
+			{
+				System.out.println("Enter name to be changed:");
+				String name1= sc.next();
+				p.changename(name1);
+			}
+		}
+	}
+}

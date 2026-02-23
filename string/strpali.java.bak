@@ -1,0 +1,29 @@
+import java.util.*;
+class strpali 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a string:");
+		String str=sc.nextLine();
+		System.out.println("is palindrome:"+ispali(str));
+		
+	}
+	public static String reverse(String str)
+	{
+		String rev="";
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			char ch=str.charAt(i);
+			 rev=rev+ch;
+		}
+		return rev;
+	}
+	public static boolean ispali(String str)
+	{
+		if(str.equals(reverse(str)))
+			return true;
+		else
+			return false;
+	}
+}

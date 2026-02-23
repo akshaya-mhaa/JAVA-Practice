@@ -1,0 +1,43 @@
+class FindKey 
+{
+	public static void main(String[] args) 
+	{
+		int a=3521;
+		int b=2452;
+		int c=1352;
+		int g=1;
+		int result=0;
+		int n=9999;
+		while(n!=0){
+			int al=a%10;
+			int bl=b%10;
+			int cl=c%10;
+			result = result+(g*(lar(al,bl,cl)-sma(al,bl,cl)));
+			g*=10;
+			a/=10;
+			b/=10;
+			c/=10;
+			n/=10;
+		}
+		System.out.print(result);
+	}
+	
+	public static int lar(int a,int b,int c){
+		if(a>b&&a>c)
+			return a;
+		else if(b>c)
+			return b;
+		else
+			return c;
+			
+	}
+	
+	public static int sma(int a,int b,int c){
+		if(a<b&&a<c)
+			return a;
+		else if(b<c)
+			return b;
+		else
+			return c;
+	}
+}

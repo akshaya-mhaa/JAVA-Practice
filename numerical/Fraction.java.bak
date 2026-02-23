@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Fraction 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		float sum=0;
+		System.out.println("Enter 1st number: ");
+		float a=sc.nextFloat();
+		sum+=a-((int)a);
+		System.out.println("Enter 2nd number: ");
+		float b=sc.nextFloat();
+		sum+=b-((int)b);
+		System.out.println("the sum of fraction is "+sum);
+	}
+}

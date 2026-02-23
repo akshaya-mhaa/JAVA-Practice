@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class AscorDes 
+{	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{	System.out.println("Enter a number :");
+		int n=sc.nextInt();
+		Asc(n);
+		Dec(n);		}
+	public static void Asc(int n){
+		int a=0;
+		while(n>9){
+			int l=n%10;
+			n/=10;
+			int p=n%10;
+			if(l<p){
+				System.out.println("Not Ascending !");
+				break;
+			}
+			else a++;		
+		}
+		if(a>0)
+			System.out.println(" ascending");
+	}
+	public static void Dec(int n){
+		int a=0;
+		while(n>9){
+			int l=n%10;
+			n/=10;
+			int p=n%10;
+			if(l>p){
+				System.out.println("Not Descending !");
+				break;
+			}
+			else a++;		
+		}
+		if(a>0)
+			System.out.println(" Descending");
+	}
+}

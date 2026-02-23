@@ -1,0 +1,38 @@
+class SumDiff 
+{
+	public static void main(String[] args) 
+	{
+		int a=3521;
+		int b=2452;
+		int c=1352;
+		
+		int key=(lar(a)+lar(b)+lar(c))-(small(a)+small(b)+small(c));
+		System.out.println("Key is "+key);ja
+	}
+	
+	public static int lar(int n){
+		int n1=n%10;
+		int n2=(n/10)%10;
+		int n3=(n/100)%10;
+		int n4=(n/1000);
+		
+		int max1=(n1>n2)?n1:n2;
+		int max2=(n3>n4)?n3:n4;
+		
+		int lar=(max1>max2)?max1:max2;
+		return lar;
+	}
+	
+	public static int small(int n){
+		int n1=n%10;
+		int n2=(n/10)%10;
+		int n3=(n/100)%10;
+		int n4=(n/1000);
+		
+		int min1=(n1<n2)?n1:n2;
+		int min2=(n3<n4)?n3:n4;
+		
+		int sma=(min1<min2)?min1:min2;
+		return sma;
+	}
+}

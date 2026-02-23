@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class automorphic 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a number");
+		int n=sc.nextInt();
+		int q=n;
+		int h=n;
+		int pow=n*n;
+		int s=0;
+		int m=0;
+		System.out.println(pow);
+		while(n!=0)
+		{
+			int p=pow%10;
+			s=(s*10)+p;
+			pow=pow/10;
+			n=n/10;
+			
+			
+		}
+		System.out.println(s+"s");
+		while(h!=0)
+		{
+			int o=s%10;
+			m=(m*10)+o;
+			s=s/10;
+			h=h/10;
+			
+		}
+			
+			System.out.println(m+"m");
+		
+
+			
+		if (m==q)
+			System.out.println("is a automorphic no");
+		else 
+			System.out.println("is not a automorphic number");
+		
+	}
+}

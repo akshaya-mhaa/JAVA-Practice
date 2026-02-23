@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class pali
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args){
+		System.out.println("Enter a number:");
+		int n=sc.nextInt();
+		int d=n;
+		int c=0;
+		while(n!=0)
+		{
+			int l=n%10;
+			c=(c*10)+l;
+			n=n/10;
+		}
+		if(d==c)
+			System.out.println(d+"is a palindrome");
+		else
+			System.out.println(d+"is not a palindrome");
+	}
+}

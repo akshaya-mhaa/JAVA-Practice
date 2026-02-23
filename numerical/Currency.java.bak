@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Currency 
+{
+	static Scanner sc=new Scanner (System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter number of 100's");
+		int h=sc.nextInt();
+		System.out.println("Enter number of 200's");
+		int t=sc.nextInt();
+		System.out.println("Enter number of 1000's");
+		int th=sc.nextInt();
+		System.out.println("Total sum is:"+((h*100)+(t*200)+(th*1000));
+		
+	}
+}

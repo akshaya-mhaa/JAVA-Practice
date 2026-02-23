@@ -1,0 +1,18 @@
+class Inchild2 
+{
+	int c;
+	Inchild2(int c)
+	{
+		super (10,20);
+		this.c=c;
+		
+	}
+	public static void main(String[] args) 
+	{
+		Inchild ch=new Inchild(20);
+		
+		System.out.println(ch.a);
+		System.out.println(ch.b);
+		System.out.println(ch.c);
+	}
+}

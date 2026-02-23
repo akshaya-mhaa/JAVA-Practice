@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class voco 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a string:");
+		String str=sc.nextLine();
+		int vowel=0;
+		int cons=0;
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			char ch=Character.toLowerCase(str.charAt(i));
+			if(ch>='a' && ch<='z')
+				if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+					vowel++;}
+				else{
+					cons++;}
+				
+				
+		}
+		System.out.println("vowel="+vowel+"consonant="+cons);
+	}
+}

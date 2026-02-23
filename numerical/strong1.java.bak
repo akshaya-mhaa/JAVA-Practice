@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class strong1 
+{
+	static Scanner sc=new Scanner (System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a number:");
+		int n=sc.nextInt();
+		int l=n;
+		int m=0;
+		
+		while(n!=0)
+		{
+			int s=1;
+			int g=n%10;
+			for(i=1;i<=g;i++){
+			 s=s*i;
+			 
+			 n=n/10;
+			
+		}
+		m=m+s;
+		}
+		if(l==m)
+			System.out.println(l+"is a strong number");
+		else
+			System.out.println(l+"is not a strong number");
+	}
+}

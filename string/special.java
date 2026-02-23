@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class special
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter a character");
+		char input=sc.next().charAt(1);
+		if (input>='A'&& input<='Z')
+		{
+			System.out.println("uppercase");
+		}
+		else if (input>='a' && input<='z')
+		{
+			System.out.println("lowercase");
+		}
+		else if (input>='0' && input<='9')
+		{
+			System.out.println("digit");
+		}
+		else 
+		{
+			System.out.println("special character");
+		}
+	}
+}

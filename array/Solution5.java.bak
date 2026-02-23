@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+public class Solution
+	{
+    static Scanner sc= new Scanner(System.in);
+    public static void main(String [] args)
+    {
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        result(arr,k,n);
+    }
+    public static void result(int[] arr,int k,int n)
+    {
+        int[] b=new int[n];
+        Arrays.sort(arr);
+        int one=arr[0];
+        int j=0;
+        int c=1;
+        b[0]=arr[0];
+        for(int i=0;i<n;i++)
+        {
+            if(one<arr[i])
+            {
+                b[j]=arr[i];
+                j++;
+                c++;
+            }
+        }
+        if(c<k)
+        {
+            int p=c-1;
+            b[p]=b[p-1]*10;
+        }
+
+        System.out.println(Arrays.toString(b));
+    }
+}

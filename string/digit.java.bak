@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class digit 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a number:");
+		String a=sc.nextLine();
+		int i=0;
+		int b=a.length();
+		while( i < b)
+		{
+			System.out.println(a.charAt(i));
+			i++;
+		}
+		
+	}
+}

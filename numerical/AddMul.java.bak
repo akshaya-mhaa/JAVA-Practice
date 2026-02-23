@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class AddMul 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter 1st number: ");
+		float a=sc.nextFloat();
+		System.out.println("Enter 2nd number: ");
+		float b=sc.nextFloat();
+		System.out.println("Enter 3rd number: ");
+		float c=sc.nextFloat();
+		System.out.println((a+b)*c);
+	}
+}

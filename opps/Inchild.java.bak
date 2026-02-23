@@ -1,0 +1,16 @@
+class Inchild extends Inparent 
+{
+	Inchild(int b)
+	{
+		super(10);
+		this.b=b;
+	}
+	int b=20;
+	public static void main(String[] args) 
+	{
+		Inchild ch=new Inchild(20);
+		
+		System.out.println(ch.a);
+		System.out.println(ch.b);
+	}
+}

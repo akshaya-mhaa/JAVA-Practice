@@ -1,0 +1,42 @@
+import java.util.Scanner;
+class calculator 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a number:");
+		int a=sc.nextInt();
+		System.out.println("enter a number:");
+		int b=sc.nextInt();
+		System.out.println("enter operation:");
+		char c=sc.next().charAt(0);
+		if(c=='+' )
+		{
+			int d=a+b;
+			System.out.println("result:"+d);
+		}
+		else if(c=='-')
+			{
+			int e=a-b;
+			System.out.println("result:"+e);
+		}
+		else if(c=='*')
+			{
+			int f=a*b;
+			System.out.println("result:"+f);
+		}else if(c=='-')
+			{
+			int g=a/b;
+			System.out.println("result:"+g);
+		}else if(c=='-')
+			{
+			int h=a%b;
+			System.out.println("result:"+h);
+		}
+		else
+		{
+			System.out.println("enter valid input");
+		}
+		
+	}
+}

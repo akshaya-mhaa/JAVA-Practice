@@ -1,0 +1,15 @@
+class NoOfWords 
+{
+	public static void main(String[] args) 
+	{
+		String s="vel tech high tech autonomous college";
+		String [] str=s.trim().split(" ");
+		//System.out.print(str.length+" number of  words    ");
+		int count =1 ;
+		for(int i=0;i<s.length();i++){
+			if(s.charAt(i)==' ')
+				count++;
+		}
+		System.out.println(count+" number of words using for loop");
+	}
+}

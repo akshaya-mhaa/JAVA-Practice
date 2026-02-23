@@ -1,0 +1,25 @@
+class  Identifier
+{
+	public static void main(String[] args) 
+	{
+		
+		int a=0;
+		String s="roll__no";
+		if(s.length()==1&&Character.isLetter(s.charAt(0))==true)
+			System.out.print("is a vaild identifier");
+		else{
+			
+			for(int i=0;i<s.length();i++){
+				char ch=s.charAt(i);
+				if(Character.isLetter(ch)==true||Character.isDigit(ch)==true||ch=='$'||ch=='_' &&Character.isDigit(s.charAt(0))==false)
+					a++;
+				else
+					break;
+			}
+		}
+		if(a==s.length() )
+			System.out.println("is a vaild identifier");
+		else
+			System.out.println("is not a vaild identifier");
+	}
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class  OddSeq
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner (System.in);
+		String sum="";
+		String even="";
+		int count;
+		System.out.println("Enter a number:");
+		int n=sc.nextInt();
+		while(n!=0){
+			if(n%2!=0){
+				sum=(n%10)+sum;
+			}
+			else{
+				even=(n%10)+even;
+				count++;
+			}
+			n/=10;
+			
+		}
+		System.out.println(sum+even+count);
+	}
+}

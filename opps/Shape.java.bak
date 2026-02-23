@@ -1,0 +1,11 @@
+class Shape 
+{
+	public static void main(String[] args) 
+	{
+		Inshape s= new Inshape();
+		Inrectangle r=new Inrectangle();
+		
+		s.getarea();
+		r.getarea(3,4);
+	}
+}

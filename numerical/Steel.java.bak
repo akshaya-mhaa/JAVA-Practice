@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Steel 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter hardness: ");
+		int h=sc.nextInt();
+		System.out.println("Enter carbon content: ");
+		float c=sc.nextFloat();
+		System.out.println("Enter tensile strength: ");
+		int ts=sc.nextInt();
+		ClassifyGivenSteel(h,c,ts);
+	}
+	public static char ClassifyGivenSteel(int h,float c,int ts){
+		if(h>60 && c>0.8 && ts>5700)
+			return 'A';
+		else if(h>60 && c>0.8 && ts<5700)
+			return 'B';
+		else if(h>60 && c<0.8 && ts>5700)
+			return 'C';
+		else if(h<60 && c>0.8 && ts>5700)
+			return 'D';
+		else if(h>60 || c>0.8 || ts>5700)
+			return 'E';
+		else
+			return '0';
+	}
+}
